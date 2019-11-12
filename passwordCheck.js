@@ -51,6 +51,10 @@ function passwordIsValid(password){
 
 // function that returns true if password is okay and false if password is not okay
 function passwordIsOk(password){
+    // test if the first two conditions are both met 
+    // and at least one of the other
+
+    //          condition1                          condition2                              condition 3                         condition4                          condition5                          condition6
     if (((password.toString() !== "") && (password.toString().length >= 9)) && ((!password.toString().match(ptn1) || !password.toString().match(ptn2) || !password.toString().match(ptn3) || !password.toString().match(ptn4)))){
         return true;
     }
